@@ -1,7 +1,7 @@
 name: test ci
 
 env:
-  PYTHONPATH: ${{ test }}
+  PYTHONPATH: ${{ test.test }}
 
 on:
   push:
