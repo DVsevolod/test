@@ -1,7 +1,7 @@
 name: test ci
 
 env:
-  PYTHONPATH: ${{ github.workspace }}
+  PYTHONPATH: ${{ github.workspace }}/test
 
 on:
   push:
