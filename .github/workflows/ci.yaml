@@ -1,5 +1,8 @@
 name: test ci
 
+env:
+  PYTHONPATH: ${{ github.workspace }}
+
 on:
   push:
     branches: [ main ]
