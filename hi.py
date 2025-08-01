@@ -1,4 +1,4 @@
 
 
-print('Hitler!')
+print('Hi!')
 print('File was updated')
