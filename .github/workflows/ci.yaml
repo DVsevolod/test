@@ -7,15 +7,26 @@ on:
     branches: [ main ]
 
 jobs:
-  hello-world:
+  test:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Say hi
-        run: echo "hi"
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
 
-      - name: Show date
-        run: date
+      - name: Run tests
+        run: python test_hi.py
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/head/main'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3

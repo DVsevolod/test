@@ -1,4 +1,4 @@
 
 
-print('Hi!')
-print('File was updated')
+def say_hi():
+    return "Hi!"
