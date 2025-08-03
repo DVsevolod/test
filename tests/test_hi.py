@@ -1,6 +1,6 @@
 import unittest
 
-from hi import say_hi
+from main import say_hi
 
 
 class TestHi(unittest.TestCase):
