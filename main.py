@@ -12,4 +12,3 @@ def insult(name):
 
 if __name__ == "__main__":
     print('server started')
-    a = 2 + '3'
