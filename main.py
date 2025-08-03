@@ -9,4 +9,4 @@ def say_hi():
 
 
 if __name__ == "__main__":
-    app.run()
+    print('server started')
