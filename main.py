@@ -1,11 +1,13 @@
-from flask import Flask
 
 
-app = Flask(__name__)
-
-@app.route('/')
 def say_hi():
     return "Hi!"
+
+def add(a, b):
+    return a + b
+
+def insult(name):
+    return f'You are such a faggot, {name}!'
 
 
 if __name__ == "__main__":
