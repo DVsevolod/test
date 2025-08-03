@@ -51,7 +51,7 @@ jobs:
   deploy-feature:
     needs: test
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/feature/'
+    if: startsWith(github.ref, 'refs/heads/feature/')
 
     steps:
       - name: Success
